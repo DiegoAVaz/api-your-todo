@@ -3,7 +3,7 @@ const nodemailer = require("nodemailer");
 const { buscarUsuarioPeloEmail } = require("../models/buscaUsuarioPeloEmail");
 const dotenv = require("dotenv").config();
 
-const linkRedefinicao = "http://localhost:3000/redefinirSenha/";
+const linkRedefinicao = "https://your-todo-2401.netlify.app/redefinirSenha/";
 
 const sendEmailRecuperaSenha = async (req, res) => {
   const transporter = nodemailer.createTransport({
